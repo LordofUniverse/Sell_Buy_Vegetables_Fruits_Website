@@ -1,0 +1,88 @@
+.Order{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.search{
+    height: 15%;
+    width: 450px;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.box{
+    background-color: white;
+    border-radius: 10px;
+    height: 50px;
+    width: 100%;
+    border: 5px solid black;
+}
+
+.products{
+    height: 85%;
+    width: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+}
+
+.Row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.card{
+    width: 18rem !important;
+    height: 18rem !important;
+}
+
+.card-img-top{
+    height: 160px !important;
+}
+
+.card-body{
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    flex-direction: column !important;
+}
+
+.cart {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.cart .bt{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.card .btt{
+    margin-left: 10px;
+}
+
+.symb{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.symbimg{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
