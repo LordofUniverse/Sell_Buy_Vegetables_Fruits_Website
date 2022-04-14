@@ -86,3 +86,21 @@
     height: 100%;
     width: 100%;
 }
+
+.symb2{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.symbimg2{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.symb:hover, .symb2:hover, .symbimg:hover, .symbimg2:hover{
+    cursor: pointer;
+}

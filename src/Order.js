@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useNavigate } from "react-router-dom";
 
 import './Order.css';
 
@@ -11,6 +12,7 @@ import pineapple from "./Pineapple.jpg";
 import pomegranate from "./Pomegranate.jpg";
 import pumpkin from "./pumpkin.jpg";
 import cart from "./cart.png";
+import home from "./home.jpg";
 
 function Order() {
 
@@ -21,10 +23,22 @@ function Order() {
     const [img, setimg] = useState([beetroot, onion, carrot, kiwi])
     const [img2, setimg2] = useState([lettuce, pineapple, pomegranate, pumpkin])
 
+    let navigate = useNavigate(); 
+    const ToCart = () =>{ 
+        navigate("../cart");
+    }
+
+    const ToHome = () =>{ 
+        navigate("../");
+    }
+
     return (
     <div class = "Order">
+        <div class = "symb2">
+                <img class = "symbimg2" src = {home} alt = "..." onClick={ToHome}/>
+        </div>
         <div class = "symb">
-                <img class = "symbimg" src = {cart} alt = "..." />
+                <img class = "symbimg" src = {cart} alt = "..." onClick={ToCart}/>
         </div>
         <div class = "search">
             {/* <div class = "box"> */}

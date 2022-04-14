@@ -1,5 +1,5 @@
-import { useNavigate } from "react-router-dom";
-
+import { useLinkClickHandler, useNavigate } from "react-router-dom";
+import bg from "./bg.jpeg"
 import './App.css';
 
 
@@ -16,7 +16,9 @@ function App() {
   }
 
   return (
-    <div className="App">
+    <div className="App" style={{ 
+      backgroundImage: `URL(${bg})`
+     }}>
       <div class = "left">
         <div class = 'title'>
           NAME

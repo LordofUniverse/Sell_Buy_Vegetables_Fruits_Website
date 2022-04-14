@@ -1,11 +1,15 @@
+
+
 .App {
   text-align: center;
-  width: 99%;
-  height: 97vh;
+  width: 100%;
+  height: 100vh;
   display: flex;
   flex-direction: row;
   margin: 0;
   background-color: rgb(254,254,254);
+  /* background-image: "bg.jpeg"; */
+  overflow: hidden;
 }
 
 .App-logo {
@@ -85,6 +89,7 @@
   margin-left: 50px;
   margin-right: 50px;
   font-family: 'Anek Tamil', sans-serif;
+  color: white;
 }
 
 .buy{
